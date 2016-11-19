@@ -1,0 +1,22 @@
+{
+	"name" : "lib16/utils",
+	"description" : "Some utility classes.",
+	"version" : "1.0.0",
+	"keywords" : ["mime type", "formatter", "utility"],
+	"homepage" : "https://github.com/lib16/utils-php",
+	"license" : "MIT",
+	"require" : {
+		"php" : ">=7.0",
+		"myclabs/php-enum" : ">=1.5"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Lib16\\Utils\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Lib16\\Utils\\Tests\\" : "tests/"
+		}
+	}
+}
