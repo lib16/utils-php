@@ -2,21 +2,26 @@
 
 namespace Lib16\Utils;
 
+use Lib16\Utils\Enums\Unit;
+
 class NumberFormatter
 {
 	private $maximumFractionDigits;
-	
+
 	public function __construct(int $maximumFractionDigits)
 	{
 		$this->maximumFractionDigits = $maximumFractionDigits;
 	}
 
-	public function format($number)
+	public function format($number, Unit $unit = null)
 	{
 		if (!is_null($number)) {
 			$string = strval(round($number, $this->maximumFractionDigits));
 			if ($string == "-0") {
 				$string = "0";
+			}
+			if (!is_null($unit) && $string != "0") {
+				$string .= $unit;
 			}
 			return $string;
 		}
