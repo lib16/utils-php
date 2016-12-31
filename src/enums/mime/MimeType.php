@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib16\Utils\Enums;
+namespace Lib16\Utils\Enums\Mime;
 
 use MyCLabs\Enum\Enum;
 

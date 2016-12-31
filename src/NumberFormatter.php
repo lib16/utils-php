@@ -2,7 +2,7 @@
 
 namespace Lib16\Utils;
 
-use Lib16\Utils\Enums\Unit;
+use Lib16\Utils\Enums\CSS\{Unit, LengthUnit};
 
 class NumberFormatter
 {
@@ -20,7 +20,7 @@ class NumberFormatter
 			if ($string == "-0") {
 				$string = "0";
 			}
-			if (!is_null($unit) && $string != "0") {
+			if (!is_null($unit) && ($string != "0" || !$unit instanceof LengthUnit)) {
 				$string .= $unit;
 			}
 			return $string;
