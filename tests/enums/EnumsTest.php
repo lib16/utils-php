@@ -2,26 +2,11 @@
 
 namespace Lib16\Utils\Enums\Tests;
 
-//require_once 'vendor/autoload.php';
-require_once 'vendor/myclabs/php-enum/src/Enum.php';
-require_once 'src/enums/css/Unit.php';
-require_once 'src/enums/css/LengthUnit.php';
-require_once 'src/enums/css/TimeUnit.php';
-require_once 'src/enums/mime/MimeType.php';
-require_once 'src/enums/mime/AudioType.php';
-require_once 'src/enums/mime/IconType.php';
-require_once 'src/enums/mime/ImageType.php';
-require_once 'src/enums/mime/VideoType.php';
+require_once 'vendor/autoload.php';
 
-
-use Lib16\Utils\Enums\Media;
-use Lib16\Utils\Enums\CSS\LengthUnit;
-use Lib16\Utils\Enums\Mime\{AudioType, IconType, ImageType, VideoType};
+use Lib16\Utils\Enums\CSS\{LengthUnit, TimeUnit, AngleUnit, FrequencyUnit, Media};
+use Lib16\Utils\Enums\Mime\{AudioType, IconType, ImageType, VideoType, StyleType};
 use PHPUnit\Framework\TestCase;
-use Lib16\Utils\Enums\CSS\TimeUnit;
-use Lib16\Utils\Enums\CSS\AngleUnit;
-use Lib16\Utils\Enums\CSS\FrequencyUnit;
-use Lib16\Utils\Enums\Mime\StyleType;
 
 class EnumsTest extends TestCase
 {
@@ -67,12 +52,13 @@ class EnumsTest extends TestCase
 			[(new ImageType(ImageType::JPG))->getFilenameExtension(), 'jpg'],
 			[(ImageType::JPG())->getFilenameExtension(), 'jpg'],
 			[Media::ALL(), 'all'],
-			[Media::AURAL(), 'aural'],
 			[Media::BRAILLE(), 'braille'],
+			[Media::EMBOSSED(), 'embossed'],
 			[Media::HANDHELD(), 'handheld'],
-			[Media::PROJECTION(), 'projection'],
 			[Media::PRINT(), 'print'],
+			[Media::PROJECTION(), 'projection'],
 			[Media::SCREEN(), 'screen'],
+			[Media::SPEECH(), 'speech'],
 			[Media::TTY(), 'tty'],
 			[Media::TV(), 'tv'],
 		];

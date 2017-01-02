@@ -1,6 +1,6 @@
 {
 	"name" : "lib16/utils",
-	"description" : "Some utility classes.",
+	"description" : "Some utility classes for lib16.",
 	"version" : "1.0.0",
 	"keywords" : ["mime type", "formatter", "utility"],
 	"homepage" : "https://github.com/lib16/utils-php",
