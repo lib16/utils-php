@@ -1,6 +1,6 @@
 <?php
 
-namespace Lib16\Utils\Enums\Tests;
+namespace Lib16\Utils\Tests\Enums;
 
 require_once 'vendor/autoload.php';
 

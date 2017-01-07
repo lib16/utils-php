@@ -62,7 +62,7 @@ print 1000 . FrequencyUnit::HZ();
 
 the generated output:
 
-```html
+```
 1em 2ex 2ch 6rem
 50vw 50vh 50vmin 50vmax
 2.54cm 25.4mm 101.6Q 1in 6pc 72pt 96px
@@ -76,7 +76,7 @@ the generated output:
 ### CSS Media Types
 ```php
 <?php
-require_once './vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use Lib16\Utils\Enums\CSS\Media;
 
@@ -95,7 +95,7 @@ print Media::TV();
 
 the generated output:
 
-```html
+```
 all braille embossed handheld print projection screen speech tty tv
 ```
 
@@ -103,7 +103,7 @@ all braille embossed handheld print projection screen speech tty tv
 ### MIME Types
 ```php
 <?php
-require_once './vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use Lib16\Utils\Enums\Mime\{ImageType, IconType, VideoType, AudioType, StyleType};
 
@@ -150,7 +150,7 @@ print StyleType::XSL();
 
 the generated output:
 
-```html
+```
 gif: image/gif
 jpg: image/jpeg
 png: image/png
@@ -172,4 +172,24 @@ wav: audio/wav
 
 css: text/css
 xsl: text/xsl
+```
+
+
+### NumberFormatter
+```php
+<?php
+require_once 'vendor/autoload.php';
+
+use Lib16\Utils\NumberFormatter;
+use Lib16\Utils\Enums\CSS\LengthUnit;
+
+$formatter = new NumberFormatter(2);
+print $formatter->format(100 / 6, LengthUnit::PX());
+
+```
+
+the generated output:
+
+```
+16.67px
 ```
