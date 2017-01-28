@@ -27,4 +27,13 @@ class NumberFormatter
 		}
 		return null;
 	}
+
+	public function formatArray(array $numbers, string $delimiter = ' ', Unit $unit = null)
+	{
+		$string = '';
+		foreach ($numbers as $number) {
+			$string .= $this->format($number, $unit) . $delimiter;
+		}
+		return rtrim($string, $delimiter);
+	}
 }

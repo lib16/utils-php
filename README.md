@@ -7,7 +7,7 @@ Some utility classes for lib16.
 Add the following to your project's `composer.json` file:
 ```json
 "require": {
-    "lib16/utils": "~1.0"
+    "lib16/utils": "^1.0"
 }
 ```
 
