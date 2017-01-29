@@ -28,12 +28,12 @@ class NumberFormatter
 		return null;
 	}
 
-	public function formatArray(array $numbers, string $delimiter = ' ', Unit $unit = null)
+	public function formatArray(array $numbers, string $delimiter = null, Unit $unit = null)
 	{
-		$string = '';
-		foreach ($numbers as $number) {
-			$string .= $this->format($number, $unit) . $delimiter;
+		$formatted = [];
+		foreach (array_filter($numbers, 'strlen') as $number) {
+			$formatted[] = $this->format($number, $unit);
 		}
-		return rtrim($string, $delimiter);
+		return is_null($delimiter) ? $formatted : implode($delimiter, $formatted);
 	}
 }

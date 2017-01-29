@@ -38,9 +38,13 @@ class NumberFormatterTest extends TestCase
 
 	public function testFormatArray()
 	{
+		$expected = '2px 2.3457px 0 0';
+		$array = [2, 2.34567, 0, -0.00000001, null];
 		$numberFormatter = new NumberFormatter(4);
-		$this->assertEquals('2px 2.3457px 0 0', $numberFormatter
-				->formatArray([2, 2.34567, 0, -0.00000001, null], ' ', LengthUnit::PX()));
+		$this->assertEquals($expected,
+				$numberFormatter->formatArray($array, ' ', LengthUnit::PX()));
+		$this->assertEquals($expected,
+				implode(' ', $numberFormatter->formatArray($array, null, LengthUnit::PX())));
 	}
 
 }
