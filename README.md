@@ -3,19 +3,11 @@
 Some utility classes for lib16.
 
 ## Installation with Composer
+This package is available on [packagist](https://packagist.org/packages/lib16/utils), so you can use [Composer](https://getcomposer.org) to install it.
+Run the following command in your shell:
 
-Add the following to your project's `composer.json` file:
-```json
-"require": {
-    "lib16/utils": "^1.0"
-}
 ```
-
-Run `composer update`
-
-Include Composer's `autoload.php`:
-```php
-require_once 'vendor/autoload.php';
+composer require lib16/utils
 ```
 
 ## Enums
@@ -23,7 +15,7 @@ require_once 'vendor/autoload.php';
 ### CSS Units
 ```php
 <?php
-require_once './vendor/autoload.php';
+require_once 'vendor/autoload.php';
 
 use Lib16\Utils\Enums\CSS\{LengthUnit, AngleUnit, TimeUnit, FrequencyUnit};
 
@@ -107,43 +99,43 @@ require_once 'vendor/autoload.php';
 
 use Lib16\Utils\Enums\Mime\{ImageType, IconType, VideoType, AudioType, StyleType};
 
-print (ImageType::GIF())->getFilenameExtension() . ': ';
+print ImageType::GIF()->getFilenameExtension() . ': ';
 print ImageType::GIF() . "\n";
-print (ImageType::JPG())->getFilenameExtension() . ': ';
+print ImageType::JPG()->getFilenameExtension() . ': ';
 print ImageType::JPG() . "\n";
-print (ImageType::PNG())->getFilenameExtension() . ': ';
+print ImageType::PNG()->getFilenameExtension() . ': ';
 print ImageType::PNG() . "\n";
-print (ImageType::SVG())->getFilenameExtension() . ': ';
+print ImageType::SVG()->getFilenameExtension() . ': ';
 print ImageType::SVG() . "\n\n";
 
-print (IconType::GIF())->getFilenameExtension() . ': ';
+print IconType::GIF()->getFilenameExtension() . ': ';
 print IconType::GIF() . "\n";
-print (IconType::ICO())->getFilenameExtension() . ': ';
+print IconType::ICO()->getFilenameExtension() . ': ';
 print IconType::ICO() . "\n";
-print (IconType::PNG())->getFilenameExtension() . ': ';
+print IconType::PNG()->getFilenameExtension() . ': ';
 print IconType::PNG() . "\n";
-print (IconType::SVG())->getFilenameExtension() . ': ';
+print IconType::SVG()->getFilenameExtension() . ': ';
 print IconType::SVG() . "\n\n";
 
-print (VideoType::MP4())->getFilenameExtension() . ': ';
+print VideoType::MP4()->getFilenameExtension() . ': ';
 print VideoType::MP4() . "\n";
-print (VideoType::OGV())->getFilenameExtension() . ': ';
+print VideoType::OGV()->getFilenameExtension() . ': ';
 print VideoType::OGV() . "\n";
-print (VideoType::WEBM())->getFilenameExtension() . ': ';
+print VideoType::WEBM()->getFilenameExtension() . ': ';
 print VideoType::WEBM() . "\n\n";
 
-print (AudioType::AAC())->getFilenameExtension() . ': ';
+print AudioType::AAC()->getFilenameExtension() . ': ';
 print AudioType::AAC() . "\n";
-print (AudioType::MP3())->getFilenameExtension() . ': ';
+print AudioType::MP3()->getFilenameExtension() . ': ';
 print AudioType::MP3() . "\n";
-print (AudioType::OGG())->getFilenameExtension() . ': ';
+print AudioType::OGG()->getFilenameExtension() . ': ';
 print AudioType::OGG() . "\n";
-print (AudioType::WAV())->getFilenameExtension() . ': ';
+print AudioType::WAV()->getFilenameExtension() . ': ';
 print AudioType::WAV() . "\n\n";
 
-print (StyleType::CSS())->getFilenameExtension() . ': ';
+print StyleType::CSS()->getFilenameExtension() . ': ';
 print StyleType::CSS() . "\n";
-print (StyleType::XSL())->getFilenameExtension() . ': ';
+print StyleType::XSL()->getFilenameExtension() . ': ';
 print StyleType::XSL();
 
 ```
