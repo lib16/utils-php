@@ -1,4 +1,4 @@
-<phpunit bootstrap="vendor/autoload.php">
+<phpunit>
     <testsuite name="lib16/utils">
         <directory>tests</directory>
     </testsuite>
