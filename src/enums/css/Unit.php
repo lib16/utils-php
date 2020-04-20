@@ -1,6 +1,8 @@
 <?php
 namespace Lib16\Utils\Enums\CSS;
 
-interface Unit
+use MyCLabs\Enum\Enum;
+
+class Unit extends Enum
 {
 }

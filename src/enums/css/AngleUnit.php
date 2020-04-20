@@ -1,9 +1,7 @@
 <?php
 namespace Lib16\Utils\Enums\CSS;
 
-use MyCLabs\Enum\Enum;
-
-class AngleUnit extends Enum implements Unit
+class AngleUnit extends Unit
 {
     const DEG = 'deg';
 

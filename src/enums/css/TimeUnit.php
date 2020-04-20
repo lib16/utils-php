@@ -1,9 +1,7 @@
 <?php
 namespace Lib16\Utils\Enums\CSS;
 
-use MyCLabs\Enum\Enum;
-
-class TimeUnit extends Enum implements Unit
+class TimeUnit extends Unit
 {
     const MS = 'ms';
 

@@ -1,9 +1,7 @@
 <?php
 namespace Lib16\Utils\Enums\CSS;
 
-use MyCLabs\Enum\Enum;
-
-class FrequencyUnit extends Enum implements Unit
+class FrequencyUnit extends Unit
 {
     const HZ = 'Hz';
 

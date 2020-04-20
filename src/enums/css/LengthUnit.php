@@ -1,9 +1,7 @@
 <?php
 namespace Lib16\Utils\Enums\CSS;
 
-use MyCLabs\Enum\Enum;
-
-class LengthUnit extends Enum implements Unit
+class LengthUnit extends Unit
 {
     const EM = 'em';
 
