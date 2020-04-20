@@ -2,6 +2,8 @@
 
 Some utility classes for lib16.
 
+[![Build Status](https://travis-ci.org/lib16/utils-php.svg?branch=master)](https://travis-ci.org/lib16/utils-php)
+
 ## Installation with Composer
 This package is available on [packagist](https://packagist.org/packages/lib16/utils), so you can use [Composer](https://getcomposer.org) to install it.
 Run the following command in your shell:
