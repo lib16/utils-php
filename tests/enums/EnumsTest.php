@@ -1,8 +1,6 @@
 <?php
 namespace Lib16\Utils\Tests\Enums;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
-
 use Lib16\Utils\Enums\CSS\ {
     LengthUnit,
     TimeUnit,

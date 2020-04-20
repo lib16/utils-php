@@ -1,8 +1,6 @@
 <?php
 namespace Lib16\Utils\Tests;
 
-require_once 'vendor/autoload.php';
-
 use Lib16\Utils\NumberFormatter;
 use Lib16\Utils\Enums\CSS\ {
     LengthUnit,
