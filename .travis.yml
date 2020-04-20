@@ -7,9 +7,6 @@ php:
   - 7.3
   - 7.4
 
-#jobs:
-#  fast_finish: true
-   
 before_script:
   - composer self-update
   - composer clear-cache

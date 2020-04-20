@@ -221,7 +221,7 @@ class EnumsTest extends TestCase
     /**
      * @dataProvider provider
      */
-    public function xtest(string $actual, string $expected)
+    public function test(string $actual, string $expected)
     {
         $this->assertEquals($expected, $actual);
     }
