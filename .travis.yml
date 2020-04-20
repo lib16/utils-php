@@ -16,7 +16,7 @@ before_script:
   - composer install --no-interaction
   
 script:
-  - vendor/phpunit/phpunit/phpunit
+  - vendor/bin/phpunit
 
 notifications:
   email: false
