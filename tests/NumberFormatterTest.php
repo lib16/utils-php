@@ -8,12 +8,6 @@ use Lib16\Utils\Enums\CSS\ {
 };
 use PHPUnit\Framework\TestCase;
 
-require_once 'vendor/autoload.php';
-require_once 'src/enums/css/Unit.php';
-require_once 'src/enums/css/LengthUnit.php';
-require_once 'src/enums/css/TimeUnit.php';
-require_once 'src/NumberFormatter.php';
-
 class NumberFormatterTest extends TestCase
 {
 
