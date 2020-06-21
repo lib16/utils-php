@@ -14,3 +14,5 @@ require_once 'src/enums/mime/IconType.php';
 require_once 'src/enums/mime/ImageType.php';
 require_once 'src/enums/mime/StyleType.php';
 require_once 'src/enums/mime/VideoType.php';
+require_once 'src/enums/Enum.php';
+require_once 'src/enums/Weekday.php';
