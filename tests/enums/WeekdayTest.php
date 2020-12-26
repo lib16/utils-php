@@ -47,7 +47,7 @@ class MimeTypeTest extends TestCase
         ];
     }
 
-    public function test2()
+    public function testByNumbers()
     {
         $this->assertEquals(
             [

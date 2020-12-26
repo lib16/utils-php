@@ -1,7 +1,11 @@
 {
 	"name" : "lib16/utils",
 	"description" : "Some utility classes for lib16.",
-	"keywords" : ["mime type", "formatter", "utility"],
+	"keywords" : [
+		"mime type",
+		"formatter",
+		"utility"
+	],
 	"homepage" : "https://github.com/lib16/utils-php",
 	"license" : "MIT",
 	"require" : {
@@ -9,7 +13,7 @@
 		"myclabs/php-enum" : "1.6.1"
 	},
 	"require-dev" : {
-	   "phpunit/phpunit" : "^6"
+		"phpunit/phpunit" : "^6"
 	},
 	"autoload" : {
 		"psr-4" : {

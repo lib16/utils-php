@@ -81,7 +81,6 @@ class Weekday extends Enum
             self::THU(),
             self::FRI(),
             self::SAT(),
-            self::SUN()
         ][(($number % 7) + 7) % 7];
     }
 
