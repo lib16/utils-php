@@ -13,7 +13,7 @@
 		"myclabs/php-enum" : "1.6.1"
 	},
 	"require-dev" : {
-		"phpunit/phpunit" : "^6"
+		"phpunit/phpunit" : "^6|^9"
 	},
 	"autoload" : {
 		"psr-4" : {
